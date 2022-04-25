@@ -297,7 +297,7 @@ export class Router {
 
     Axios({
       method,
-      url: url.pathname,
+      url: url.pathname + url.search,
       data: method === Method.GET ? {} : data,
       params: method === Method.GET ? data : {},
       cancelToken: this.activeVisit.cancelToken.token,

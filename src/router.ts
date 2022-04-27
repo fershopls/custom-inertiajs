@@ -212,9 +212,7 @@ export class Router {
     }
   }
 
-  public visit(href: string|URL, params: VisitParams = {}): void {
-    console.log("Visiting: " + href)
-    
+  public visit(href: string|URL, params: VisitParams = {}): void {    
     const options: Required<VisitParams> = {
       method: Method.GET,
       data: {},
